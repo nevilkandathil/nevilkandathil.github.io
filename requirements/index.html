@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Requirements - My Docs</title>
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Requirements";
+    var mkdocs_page_input_path = "requirements.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> My Docs</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Overview</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../design/">Software Design</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../projectm/">Project Management</a>
+	    </li>
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="./">Requirements</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#1-userparticipant">1. User/Participant</a></li>
+    
+
+    <li class="toctree-l2"><a href="#2-researcheradmin">2. Researcher/Admin</a></li>
+    
+
+    <li class="toctree-l2"><a href="#3-technical-userdeveloper">3. Technical User/Developer</a></li>
+    
+
+    <li class="toctree-l2"><a href="#moscow-prioritization">MoSCoW Prioritization</a></li>
+    
+
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">My Docs</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Requirements</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h2 id="1-userparticipant">1. User/Participant</h2>
+<p><strong>1.01. As a</strong> <em>user</em>, <strong>I want</strong> the game to follow regular MemoryCards rules, <strong>so that</strong> it is easily recognizable and easy to play.</p>
+<blockquote>
+<p><strong>Acceptance criteria:</strong></p>
+<blockquote>
+<ol>
+<li>Open the Memory Game</li>
+<li>Confirm that the game board appears, with every card face down</li>
+<li>Click on a card, and it flips face up</li>
+<li>Click on a second card, and it flips face up</li>
+<li>If the two cards have matching images, they are cleared from the board. Otherwise, they turn face down.</li>
+<li>Repeat steps 4 and 5 until the board is cleared</li>
+<li>Confirm that the game is won when the board is cleared.</li>
+</ol>
+</blockquote>
+</blockquote>
+<p><strong>1.02. As a</strong> <em>user</em>, <strong>I want</strong> feedback when cards are cleared <strong>so that</strong> I can easily tell that a match was found.</p>
+<blockquote>
+<p><strong>Acceptance criteria:</strong></p>
+<blockquote>
+<ol>
+<li>Open the Memory Game</li>
+<li>Click on a card</li>
+<li>Click on another card with the same image</li>
+<li>Confirm that the cards disappear with an animation and a sound effect</li>
+</ol>
+</blockquote>
+</blockquote>
+<p><strong>1.03. As a</strong> <em>user</em>, <strong>I want</strong> feedback when I select two different cards <strong>so that</strong> I can easily tell that they failed to match.</p>
+<blockquote>
+<p><strong>Acceptance criteria:</strong></p>
+<blockquote>
+<ol>
+<li>Open the Memory Game</li>
+<li>Click on a card</li>
+<li>Click on another card with the a different image</li>
+<li>Confirm that the cards are deselected and a sound effect is played, indicating a failed match</li>
+<li>Confirm that the cards stay face up for 2 seconds, then flip face down</li>
+</ol>
+</blockquote>
+</blockquote>
+<p><strong>1.04. As a</strong> <em>user</em>, <strong>I want</strong> to be informed when I win the game <strong>so that</strong> I know the game is finished.</p>
+<blockquote>
+<p><strong>Acceptance criteria:</strong></p>
+<blockquote>
+<ol>
+<li>Open the Memory Game</li>
+<li>Clear all of the cards on the board.</li>
+<li>Once the board is cleared, confirm that the victory window is displayed.</li>
+</ol>
+</blockquote>
+</blockquote>
+<p><strong>1.05. As a</strong> <em>user</em>, <strong>I want</strong> to be able to play a new game after finishing one <strong>so that</strong> I can continue playing without reopening the game.</p>
+<blockquote>
+<p><strong>Acceptance criteria:</strong></p>
+<blockquote>
+<ol>
+<li>Open the Memory Game</li>
+<li>Clear all of the cards on the board.</li>
+<li>Click on the “Continue to next level” button on the victory window.</li>
+<li>Confirm that the victory window closes and a new game starts.</li>
+</ol>
+</blockquote>
+</blockquote>
+<p><strong>1.06. As a</strong> <em>user</em>, <strong>I want</strong> to play MemoryCards with increasing numbers of cards as the levels progress, <strong>so that</strong> the difficulty increases and I am cognitively stimulated.</p>
+<blockquote>
+<p><strong>Acceptance criteria:</strong></p>
+<blockquote>
+<ol>
+<li>Open the Memory Game</li>
+<li>Finish the first level and proceed to the next one</li>
+<li>Finish more levels</li>
+<li>Confirm that the victory window closes and a new game starts.</li>
+<li>Confirm that the number of cards increases further, up to a maximum (unknown number, depends on how many cards fit on-screen)</li>
+</ol>
+</blockquote>
+</blockquote>
+<p><strong>1.07. As a</strong> <em>user</em>, <strong>I want</strong> card images to change into more complex image sets with less obvious (but still recognizable) differences as levels progress, <strong>so that</strong> the difficulty increases and I am cognitively stimulated.</p>
+<blockquote>
+<p><strong>Acceptance criteria:</strong></p>
+<blockquote>
+<ol>
+<li>Open the Memory Game</li>
+<li>Finish some levels</li>
+<li>Confirm that different sets of images are eventually used, with the images being more complex compared to the previous sets</li>
+</ol>
+</blockquote>
+</blockquote>
+<p><strong>1.08. As a</strong> <em>user</em>, <strong>I want</strong> the game to be made easier if I take too long to find a match, <strong>so that</strong> I can avoid frustration.</p>
+<blockquote>
+<p><strong>Acceptance criteria:</strong></p>
+<blockquote>
+<ol>
+<li>Open the Memory Game</li>
+<li>Fail to find a match for a period of 1 minute</li>
+<li>Confirm that the user is sent to a modified version of the level</li>
+<li>Confirm that the new version of the level has the same number of cards</li>
+<li>Confirm that the new version of the level has less complex images</li>
+</ol>
+</blockquote>
+</blockquote>
+<p><strong>1.09. As a</strong> <em>user</em>, <strong>I want</strong> to be able to identify myself in front of the game, <strong>so that</strong> my performance metrics can be encoded and stored.</p>
+<blockquote>
+<p><strong>Acceptance criteria:</strong></p>
+<blockquote>
+<ol>
+<li>Login to the Vibrant Minds website</li>
+<li>Open the Memory Game</li>
+<li>Confirm that the page displays our username, showing we are logged in</li>
+</ol>
+</blockquote>
+</blockquote>
+<p><strong>1.10. As a</strong> <em>user</em>, <strong>I want</strong> to view instructions <strong>so that</strong> I can understand how the game is played.</p>
+<blockquote>
+<p><strong>Acceptance criteria:</strong></p>
+<blockquote>
+<ol>
+<li>Open the Memory Game</li>
+<li>Click on the “How to play?” button</li>
+<li>Confirm that the game’s instructions are displayed</li>
+</ol>
+</blockquote>
+</blockquote>
+<p><strong>1.11. As a</strong> <em>user</em>, <strong>I want</strong> significant contrast between visible elements <strong>so that</strong> I can easily identify them.</p>
+<blockquote>
+<p><strong>Acceptance criteria:</strong></p>
+<blockquote>
+<ol>
+<li>Open the Memory Game</li>
+<li>Confirm that we can easily distinguish every element, with them being visually different compared to each other</li>
+</ol>
+</blockquote>
+</blockquote>
+<p><strong>1.12. As a</strong> <em>user</em>, <strong>I want</strong> non-gameplay elements to be at the top of the screen, <strong>so that</strong> I do not accidentally click/tap on them.</p>
+<blockquote>
+<p><strong>Acceptance criteria:</strong></p>
+<blockquote>
+<ol>
+<li>Open the Memory Game</li>
+<li>Confirm that the top of the screen is not a part of the game board</li>
+<li>Confirm that the top of the screen contains the “How to play?” button, mute/unmute button, pause button, and score</li>
+<li>Confirm that the entire lower portion of the game screen is a part of the game board</li>
+</ol>
+</blockquote>
+</blockquote>
+<p><strong>1.13. As a</strong> <em>user</em>, <strong>I want</strong> the game to support multiple devices, including my laptop, tablet, and mobile phone, <strong>so that</strong> I can easily access the game.</p>
+<blockquote>
+<p><strong>Acceptance criteria:</strong></p>
+<blockquote>
+<ol>
+<li>Open the Memory Game from a desktop computer</li>
+<li>Confirm that the game runs properly</li>
+<li>Repeat steps 1 and 2 using a laptop, tablet, and mobile phone</li>
+</ol>
+</blockquote>
+</blockquote>
+<p><strong>1.14. As a</strong> <em>user</em>, <strong>I want</strong> the game to support modern web browsers <strong>so that</strong> I can easily access it without installing any programs.</p>
+<blockquote>
+<p><strong>Acceptance criteria:</strong></p>
+<blockquote>
+<ol>
+<li>Open the Memory Game in the latest stable version of Google Chrome</li>
+<li>Confirm that the game runs properly</li>
+<li>Repeat steps 1 and 2 for Firefox, Edge, and Safari</li>
+</ol>
+</blockquote>
+</blockquote>
+<p><strong>1.15. As a</strong> <em>user</em>, <strong>I want</strong> to be able to pause during the game <strong>so that</strong> I can take short breaks from looking at the screen and playing.</p>
+<blockquote>
+<p><strong>Acceptance criteria:</strong></p>
+<blockquote>
+<ol>
+<li>Open the Memory Game</li>
+<li>Click the pause button on the screen.</li>
+<li>Confirm that the game is paused, and a resume button appears.</li>
+<li>Confirm that the game does not count down the timer for moving to an easier version of the level (normally happens after waiting for a minute).</li>
+<li>Click the resume button.</li>
+<li>Confirm that the game is unpaused.</li>
+</ol>
+</blockquote>
+</blockquote>
+<p><strong>1.16. As a</strong> <em>user</em>, <strong>I want</strong> to be able to exit the game <strong>so that</strong> I can stop playing.</p>
+<blockquote>
+<p><strong>Acceptance criteria:</strong></p>
+<blockquote>
+<ol>
+<li>Open the Memory Game</li>
+<li>Click the pause button on the screen.</li>
+<li>Confirm that a prompt to exit the game appears.</li>
+<li>Click on the exit button.</li>
+<li>Confirm that the game exits.</li>
+</ol>
+</blockquote>
+</blockquote>
+<p><strong>1.17. As a</strong> <em>user</em>, <strong>I want</strong> to be able to mute or unmute sound <strong>so that</strong> I can play the game without any audible distractions.</p>
+<blockquote>
+<p><strong>Acceptance criteria:</strong></p>
+<blockquote>
+<ol>
+<li>Open the Memory Game</li>
+<li>Click the sound button on the screen.</li>
+<li>Confirm that the sound is muted.</li>
+<li>Click the sound button on the screen again.</li>
+<li>Confirm that the sound is unmuted.</li>
+</ol>
+</blockquote>
+</blockquote>
+<p><strong>1.18. As a</strong> <em>user</em>, <strong>I want</strong> to keep track of my game score <strong>so that</strong> I am aware of how well I am performing during each game.</p>
+<blockquote>
+<p><strong>Acceptance criteria:</strong></p>
+<blockquote>
+<ol>
+<li>Open the Memory Game.</li>
+<li>Confirm that a scoreboard appears on the screen.</li>
+<li>Confirm that the score increases by 10 when a match is made.</li>
+<li>Confirm that the score decreases by 2 when a match fails.</li>
+</ol>
+</blockquote>
+</blockquote>
+<h2 id="2-researcheradmin">2. Researcher/Admin</h2>
+<p><strong>2.01. As a</strong> <em>researcher</em>, <strong>I want</strong> performance data to be collected using the Vibrant-Minds APIs <strong>so that</strong> I can view the statistics of all of the games in a central system.</p>
+<blockquote>
+<p><strong>Acceptance criteria:</strong></p>
+<blockquote>
+<ol>
+<li>Have users complete rounds of the Memory Game.</li>
+<li>Confirm that all of the statistics are sent to the server using the Vibrant-Minds APIs. (As opposed to some other method.)</li>
+</ol>
+</blockquote>
+</blockquote>
+<p><strong>2.02. As a</strong> <em>researcher</em>, <strong>I want</strong> to collect the ID of the participant <strong>so that</strong> I can identify the participant.</p>
+<blockquote>
+<p><strong>Acceptance criteria:</strong></p>
+<blockquote>
+<ol>
+<li>Have users complete rounds of the Memory Game.</li>
+<li>Confirm that the data received from these games includes the participant ID.</li>
+</ol>
+</blockquote>
+</blockquote>
+<p><strong>2.03. As a</strong> <em>researcher</em>, <strong>I want</strong> to collect the date and time of each game by participant ID <strong>so that</strong> I can determine when each user played each game.</p>
+<blockquote>
+<p><strong>Acceptance criteria:</strong></p>
+<blockquote>
+<ol>
+<li>Have users complete rounds of the Memory Game.</li>
+<li>Confirm that the data received from these games includes the date and time.</li>
+</ol>
+</blockquote>
+</blockquote>
+<p><strong>2.04. As a</strong> <em>researcher</em>, <strong>I want</strong> to know whether the game finished, <strong>so that</strong> I can check whether the user left partway through the game.</p>
+<blockquote>
+<p><strong>Acceptance criteria:</strong></p>
+<blockquote>
+<ol>
+<li>Have users complete rounds of the Memory Game.</li>
+<li>Confirm that the data received from these games includes an indicator that the game finished.</li>
+<li>Have users open the Memory Game, but close it without finishing the game.</li>
+<li>Confirm that the data received from these games includes an indicator that the game did not finish.</li>
+</ol>
+</blockquote>
+</blockquote>
+<p><strong>2.05. As a</strong> <em>researcher</em>, <strong>I want</strong> to know the start and finish times for each game, <strong>so that</strong> I can measure how much time the participant took.</p>
+<blockquote>
+<p><strong>Acceptance criteria:</strong></p>
+<blockquote>
+<ol>
+<li>Have users complete rounds of the Memory Game.</li>
+<li>Confirm that the data received from these games includes the start and finish times.</li>
+</ol>
+</blockquote>
+</blockquote>
+<p><strong>2.06. As a</strong> <em>researcher</em>, <strong>I want</strong> to track which difficulty level the participant reached, <strong>so that</strong> I can measure the level of their performance.</p>
+<blockquote>
+<p><strong>Acceptance criteria:</strong></p>
+<blockquote>
+<ol>
+<li>Have users complete rounds of the Memory Game.</li>
+<li>Confirm that the data received from these games includes the difficulty level reached.</li>
+</ol>
+</blockquote>
+</blockquote>
+<p><strong>2.07. As a</strong> <em>researcher</em>, <strong>I want</strong> to collect the number of correct and incorrect matches <strong>so that</strong> I can determine the accuracy in the user’s play.</p>
+<blockquote>
+<p><strong>Acceptance criteria:</strong></p>
+<blockquote>
+<ol>
+<li>Have users complete rounds of the Memory Game.</li>
+<li>Confirm that the data received from these games includes the number of correct and incorrect matches.</li>
+</ol>
+</blockquote>
+</blockquote>
+<p><strong>2.08. As a</strong> <em>researcher</em>, <strong>I want</strong> to track the time when each click (or tap) occurs <strong>so that</strong> I can recognize the pace of their play and understand their cognitive functionality better.</p>
+<blockquote>
+<p><strong>Acceptance criteria:</strong></p>
+<blockquote>
+<ol>
+<li>Have users complete rounds of the Memory Game.</li>
+<li>Confirm that the data received from these games includes the time of each click.</li>
+</ol>
+</blockquote>
+</blockquote>
+<p><strong>2.09. As a</strong> <em>researcher</em>, <strong>I want</strong> to track the score for each game <strong>so that</strong> I can determine the accuracy in the user’s play.</p>
+<blockquote>
+<p><strong>Acceptance criteria:</strong></p>
+<blockquote>
+<ol>
+<li>Have users complete rounds of the Memory Game.</li>
+<li>Confirm that the data received from these games includes the scores.</li>
+</ol>
+</blockquote>
+</blockquote>
+<h2 id="3-technical-userdeveloper">3. Technical User/Developer</h2>
+<p><strong>3.01. As a</strong> <em>developer</em>, <strong>I want</strong> the Memory Game code to be based on the Mahjong code, <strong>so that</strong> the code retains consistency between the games.</p>
+<blockquote>
+<p><strong>Acceptance criteria:</strong></p>
+<blockquote>
+<ol>
+<li>Confirm that we are starting with the Mahjong code and modifying it.</li>
+<li>Confirm that the final code structure bears resemblance to the Mahjong code.</li>
+</ol>
+</blockquote>
+</blockquote>
+<p><strong>3.02. As a</strong> <em>developer</em>, <strong>I want</strong> the card images to be easy to replace, <strong>so that</strong> we can swap them out when we draw higher quality assets.</p>
+<blockquote>
+<p><strong>Acceptance criteria:</strong></p>
+<blockquote>
+<ol>
+<li>Confirm that the image resources are in a separate directory from the game code.</li>
+<li>Confirm that replacing the image files replaces their appearances in-game.</li>
+</ol>
+</blockquote>
+</blockquote>
+<h2 id="moscow-prioritization">MoSCoW Prioritization</h2>
+<p><strong>Must have:</strong>
+- 1.01, 1.02, 1.03, 1.04, 1.05, 1.09, 1.10, 1.13, 1.14, 2.01, 2.02, 2.03, 2.04</p>
+<p><strong>Should have:</strong>
+- 1.06, 1.07, 1.08, 1.11, 1.12, 1.15, 1.16, 1.17, 2.05, 2.06, 2.07, 2.08, 3.01, 3.02</p>
+<p><strong>Could have:</strong>
+- 1.18, 2.09</p>
+<p><strong>Won’t do:</strong>
+- None. I think we should be able to complete all of the current requirements.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../projectm/" class="btn btn-neutral" title="Project Management"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../projectm/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>
